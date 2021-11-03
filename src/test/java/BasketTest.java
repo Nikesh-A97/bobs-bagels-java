@@ -100,5 +100,17 @@ public class BasketTest {
 //        assertEquals(true, result);
     }
 
+    @Test
+    public void canICreateABasketWithAnyCapacity() {
+        // Arrange
+        Basket testBasket1 = new Basket(10);
+
+        // Act
+        int result = testBasket1.getBasketSize();
+
+        // Assert
+        assertEquals(10, result);
+    }
+
 
 }

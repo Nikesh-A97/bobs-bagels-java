@@ -1,6 +1,18 @@
 public class Basket {
 
-    private Item[] basketContents = new Item[3];
+    private int basketSize;
+
+    private Item[] basketContents;
+
+    public Basket() {
+        this.basketSize = 3;
+        this.basketContents = new Item[basketSize];
+    }
+
+    public Basket(int basketSize){
+        this.basketSize = basketSize;
+        this.basketContents = new Item[basketSize];
+    }
 
     public void addItem(Item newItem) {
 
@@ -36,5 +48,9 @@ public class Basket {
     public boolean isBasketFull() {
 
         return false;
+    }
+
+    public int getBasketSize() {
+        return basketSize;
     }
 }
