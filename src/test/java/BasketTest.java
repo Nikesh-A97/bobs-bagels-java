@@ -112,7 +112,4 @@ public class BasketTest {
         assertEquals(10, result);
     }
 
-    @Test
-    public void cannotAddTwoItems
-
 }
